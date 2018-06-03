@@ -1,9 +1,9 @@
 # A short Raspberry Pi Presentation for Santa Cruz PyLadies
 
-*At a [Santa Cruz PyLadies](https://www.meetup.com/PyLadiesSC/events/250555271/) meetup last night, I had mentioned a 
-Raspberry Pi project, and some people who weren't familiar with the Raspberry Pi asked me about it. The next meeting 
-would be a Speaker Night, and I volunteered to demonstrate some Raspberry Pi stuff. So the following is basically my 
-script, with links and code.*
+*I had mentioned a Raspberry Pi project at a [Santa Cruz PyLadies](https://www.meetup.com/PyLadiesSC/) meetup last 
+month, and some people who weren't familiar with the Raspberry Pi asked me about it. I volunteered to demonstrate some 
+Raspberry Pi stuff at the upcoming [Speaker Night](https://www.meetup.com/PyLadiesSC/events/250555271/), and the 
+following is basically my script, with links and code.*
 
 ## Introduction to the Raspberry Pi
 
@@ -26,11 +26,12 @@ too, such as the [PyCharm](https://www.jetbrains.com/pycharm/) free Community Ed
 ## Hello World!
 
 When you're getting started with a Raspberry Pi (or Arduino, or Android Things), the "Hello World" equivalent is to 
-connect and blink an LED. A breadboard is a tool that lets you easily make circuits and connections by poking wires and 
-components into it -- everything is reusable, and you don't need to do any soldering. Adafruit makes a little board 
-called the [Cobbler](https://www.adafruit.com/product/914) which I have here, and which connects to the Raspberry Pi 
-with a cable, and then plugs into a breadboard, to make all Raspberry Pi pins labeled and easily accessible from the 
-breadboard, but you can also just connect individual wires from the Raspberry Pi's pins to a breadboard.
+connect and blink an LED. A [breadboard](https://learn.sparkfun.com/tutorials/how-to-use-a-breadboard) is a tool that 
+lets you easily make circuits and connections by poking wires and components into it -- everything is reusable, and you 
+don't need to do any soldering. Adafruit has a product called the [Cobbler](https://www.adafruit.com/product/914) which 
+I have here, and which connects to the Raspberry Pi with a cable, and then plugs into a breadboard, to make all 
+Raspberry Pi pins labeled and easily accessible from the breadboard, but you can also just use jumper wires to connect 
+individual Raspberry Pi pins one at a time to a breadboard.
 
 For the hardware part of this example we're using a jumper wire to connect one of the Raspberry Pi's Ground pins to one 
 end of this 330-ohm resistor, then we're connecting the other end of the 330-ohm resistor to the negative pin of this 
@@ -38,10 +39,23 @@ LED, and then using another jumper wire to connect the Raspberry Pi's GPIO20 pin
 didn't choose GPIO pin 20 for any particular reason - you can use whichever GPIO pin or pins you like so long as you 
 use the same pins in your software.) 
 
-For the software part of this example [hello_world_blink.py]()
+For the software part of this example we have 
+[hello_world_blink.py](https://github.com/tachyonlabs/raspberry_pi_pyladies_presentation/blob/master/hello_world_blink.py).
+*(I do a walk-through of [the code](https://github.com/tachyonlabs/raspberry_pi_pyladies_presentation/blob/master/hello_world_blink.py) and run it.)*
 
-## Raspberry Pi Instagram Slide and Video Show
+## [Raspberry Pi Instagram Slide and Video Show](https://github.com/tachyonlabs/raspberry_pi_slide_and_video_show)
 
+I'm a volunteer at the [Idea Fab Labs](https://santacruz.ideafablabs.com/) maker/hacker/artspace here in Santa Cruz, 
+and I was asked to set up a Raspberry Pi for our weekly open house and for IFL booths at events, so that all you 
+had to do was plug it into a large monitor and it would start running a slideshow of 
+[Idea Fab Labs' Instagram feed](https://www.instagram.com/ideafablabs/) of photos of projects, facilities, and events.
+
+I had written my original 
+[Raspberry Pi Instagram Slideshow](https://github.com/tachyonlabs/raspberry_pi_instagram_slideshow) version in Python 
+using the [Tkinter](https://wiki.python.org/moin/TkInter) GUI, but when I was asked to update it to include Instagram 
+videos as well as photos, I [rewrote it](https://github.com/tachyonlabs/raspberry_pi_slide_and_video_show) (still in 
+Python) using the cross-platform (you can run your same Python application on Windows, OS X, Android, and iOS, in 
+addition to Raspberry Pi/Linux) [Kivy](https://kivy.org/) Framework. *(I demonstrate the application.)*
 
 ## HATs
 
