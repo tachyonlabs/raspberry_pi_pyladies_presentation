@@ -23,7 +23,7 @@ Pi's GPIO (General Purpose Input/Output) pins. They also come with the
 [IDLE](https://docs.python.org/3/library/idle.html) Python IDE installed, but you can use other IDEs (or text editors) 
 too, such as the [PyCharm](https://www.jetbrains.com/pycharm/) free Community Edition, which I'm using here.
 
-## Hello World!
+## Hello World, plus HATs
 
 When you're getting started with a Raspberry Pi (or Arduino, or Android Things), the "Hello World" equivalent is to 
 connect and blink an LED. A [breadboard](https://learn.sparkfun.com/tutorials/how-to-use-a-breadboard) is a tool that 
@@ -43,6 +43,11 @@ For the software part of this example we have
 [hello_world_blink.py](https://github.com/tachyonlabs/raspberry_pi_pyladies_presentation/blob/master/hello_world_blink.py).
 *(I do a walk-through of [the code](https://github.com/tachyonlabs/raspberry_pi_pyladies_presentation/blob/master/hello_world_blink.py) and run it.)*
 
+In addition to building your own circuits or prototypes, you can also buy pre-built add-on boards called "HAT"s 
+("Hardware Attached on Top") that plug onto the Raspberry Pi's pins and extend your Raspberry Pi's functionality with 
+components like sensors, buttons, displays, etc., and may come with their own Python libraries to make them really easy 
+to use in your programs. 
+
 ## [Raspberry Pi Instagram Slide and Video Show](https://github.com/tachyonlabs/raspberry_pi_slide_and_video_show)
 
 I'm a volunteer at the [Idea Fab Labs](https://santacruz.ideafablabs.com/) maker/hacker/artspace here in Santa Cruz, 
@@ -57,18 +62,7 @@ videos as well as photos, I [rewrote it](https://github.com/tachyonlabs/raspberr
 Python) using the cross-platform (you can run your same Python application on Windows, OS X, Android, and iOS, in 
 addition to Raspberry Pi/Linux) [Kivy](https://kivy.org/) Framework. *(I demonstrate the application.)*
 
-## HATs
-
-In addition to building your own circuits or prototypes as we did with the blinking LED example, you can also buy 
-pre-built add-on boards called "HAT"s ("Hardware Attached on Top") that plug onto the Raspberry Pi's pins and extend 
-your Raspberry Pi's functionality with components like sensors, buttons, displays, etc. At both of the most recent 
-Google I/O and droidconSF conferences I got free 
-[Android Things Starter Kits](https://androidthings.withgoogle.com/#!/kits/starter-kit), 
-featuring the NXP i.MX7D Android Things development board, which among other things is pin-compatible with the 
-Raspberry Pi, so I can use the included [Rainbow Hat](https://shop.pimoroni.com/products/rainbow-hat-for-android-things) 
-with the Raspberry Pi as well.
-
-## Free Giant Amazing Project Books
+## Free Giant Amazing Raspberry Pi Project Books!
 
 There are three official Raspberry Pi project books that are free online, each one 200 lavishly-illustrated pages of 
 projects and articles (including beginner's guides). You'll see projects for gaming, music, robotics, Lego, telescope 
@@ -77,3 +71,30 @@ control, high-altitude photography, terrarium lighting control, etc. etc. etc.
 * [The Official Raspberry Pi Projects Book](https://www.raspberrypi.org/magpi-issues/Projects_Book_v1.pdf)
 * [The Official Raspberry Pi Projects Book Volume 2](https://www.raspberrypi.org/magpi-issues/Projects_Book_v2.pdf)
 * [The Official Raspberry Pi Projects Book Volume 3](https://www.raspberrypi.org/magpi-issues/Projects_Book_v3.pdf)
+
+## Have fun!
+
+So get a Raspberry Pi, and have fun! A lot of people are hesitant to try hardware projects with their computers because 
+they have no idea where to start, and are afraid they might fry their computers. But the Raspberry Pi is not only built 
+for hardware projects and very beginner-friendly and Python-friendly, but also very cheap, in case of those rare 
+occasions where worst really does come to worst.
+
+## A Cautionary Tale
+
+"Have fun!" would ordinarily be the end of the story, but in this case I also have a postscript:
+
+If you remember the "HAT"s, well, when I was writing my script for this presentation, and concluded it with the part 
+about not worrying about frying your computer, I thought, oh, I have an "Android Things" HAT which is supposedly also 
+compatible with the Raspberry Pi, I should demo that in my presentation as well. And plugged it into my Raspberry Pi, 
+and powered up, and it didn't boot. And I powered down, unplugged the Rainbow Hat board, powered up again, and still 
+nothing. 
+
+A Raspberry Pi stores the OS and all your files on a micro SD card, which helps keep it very cheap, but in my 
+experience they can be kind of sensitive, and in this case it had gotten fried not just to the point where I would 
+need to use my laptop to reformat it and recopy a system image to it, but to the point where it would just not even
+format. And because I didn't have a spare one (which is like a $5 part) and hadn't backed up my existing one before 
+this happened, it was a mad dash to get a new one and download/install/compile lots of packages that I use in time to 
+be able to do this presentation this evening.
+
+So yes, have fun! But it's also good to play it safe by having one or more spare SD cards, and backing up a system 
+image of your SD card to your laptop or desktop *after* you've installed everything in sight on it.
